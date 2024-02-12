@@ -77,4 +77,6 @@ public static class EnumerableExtensions
             }
         }
     }
+
+    public static bool IsOnlyOne<T>(this IEnumerable<T> sequence) => sequence.Take(2).Count() == 1;
 }
